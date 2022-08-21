@@ -27,6 +27,13 @@ function totalExpenses(){
 // Event starts from here 
 
 
+document.getElementById('inside-card').addEventListener('click', function(){
+    if (document.getElementById('player1-btn').addEventListener('click'), function(){
+
+    }){
+
+    }
+});
 
 
 
@@ -34,8 +41,7 @@ function totalExpenses(){
 
 
 
-
-
+// Calculation of Expensess
 document.getElementById('calculate-btn').addEventListener('click', function(){
     getSetExpenses('player-expenses', playersExpenses());
 
