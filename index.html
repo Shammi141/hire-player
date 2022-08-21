@@ -23,25 +23,25 @@
                 <div class="card m-3">
                     <img src="images/p2.jpeg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
-                        <h4>Lionel Messi</h4>
+                        <h4 id="player1-name">Lionel Messi</h4>
                         <span class="text-secondary">36 Goals || 120 Assist</span><br>
-                        <button class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player1-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
                 <div class="card m-3">
                     <img src="images/p3.jpg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
-                        <h4>Neymar Jr</h4>
+                        <h4 id="player2-name">Neymar Jr</h4>
                         <span class="text-secondary">30 Goals || 134 Assist</span><br>
-                        <button class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player2-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
                 <div class="card m-3">
                     <img src="images/p4.jpeg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
-                        <h4>Kylian Mbappe</h4>
+                        <h4 id="player3-name">Kylian Mbappe</h4>
                         <span class="text-secondary">31 Goals || 113 Assist</span><br>
-                        <button class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player3-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
                 <!-- Selected-V information -->
@@ -63,25 +63,25 @@
                 <div class="card m-3">
                     <img src="images/p5.jpeg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
-                        <h4>Vitor Machado</h4>
+                        <h4 class="player4-name">Vitor Machado</h4>
                         <span class="text-secondary">23 Goals || 90 Assist</span><br>
-                        <button class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player4-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
                 <div class="card m-3">
                     <img src="images/p6.jpg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
-                        <h4>Sergio Ramos</h4>
+                        <h4 id="player5-name">Sergio Ramos</h4>
                         <span class="text-secondary">21 Goals || 100 Assist</span><br>
-                        <button class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player5-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
                 <div class="card m-3">
                     <img src="images/p7.jpg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
-                        <h4>Renato Sanches</h4>
+                        <h4 id="player6-name">Renato Sanches</h4>
                         <span class="text-secondary">19 Goals || 97 Assist</span><br>
-                        <button class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player6-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
                 <!-- Budget calculation -->
@@ -89,25 +89,25 @@
                     <h3 class="text-center fs-2 fw-bold mt-3 mb-4">Budget</h3>
                     <div class="row g-0">
                         <label class="col" for="">Per Player</label>
-                        <input class="col" type="text">
+                        <input id="player-money" class="col" type="text">
                     </div>
                     <br>
-                    <button class="btn btn-primary w-75 mt-2 fw-semibold">Calculate</button><br>
+                    <button id="calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold">Calculate</button><br>
 
-                    <p>Player Expenses:  $<span>000</span></p>
+                    <p>Player Expenses:  $<span id="player-expenses">000</span></p>
 
                     <div class="row g-0">
                         <label class="col" for="">Manager</label>
-                        <input class="col" type="text">
+                        <input id="manager-money" class="col" type="text">
                     </div><br>
                     <div class="row g-0">
                         <label class="col" for="">Coach</label>
-                        <input class="col" type="text">
+                        <input id="coach-money" class="col" type="text">
                     </div><br>
 
-                    <button class="btn btn-primary w-75 mt-2 fw-semibold">Calculate Total</button> <br>
+                    <button id="total-calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold">Calculate Total</button> <br>
                     
-                    <p>Total Expenses: $<span>000</span></p>
+                    <p>Total Expenses: $<span id="total-expenses">000</span></p>
                 </div>
             </div>
 
@@ -120,5 +120,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    
+    <!-- js script  -->
+    <script src="js/calculation.js"></script>
 </body>
 </html>
