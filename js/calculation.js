@@ -1,3 +1,8 @@
+// Selection of players functions
+
+
+
+// Expenses calculation functions
 function playersExpenses(){
     const perPlayerAmount = parseFloat(document.getElementById('player-money').value);
     const playerExpenses = perPlayerAmount * 5;
@@ -18,8 +23,20 @@ function totalExpenses(){
     return totalExpenseAmount;
 }
 
-document.getElementById('calculate-btn').addEventListener('click', function(){
 
+// Event starts from here 
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('calculate-btn').addEventListener('click', function(){
     getSetExpenses('player-expenses', playersExpenses());
 
     document.getElementById('total-calculate-btn').addEventListener('click', function () {

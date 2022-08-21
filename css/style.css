@@ -1,3 +1,13 @@
+.section-bg{
+    background-color: #313030;
+}
 .card-img-height{
     height: 300px;
 }
+.card-bg{
+    background-color: #242323;
+}
+.footer-height{
+    height: 160px;
+}
+

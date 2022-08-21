@@ -17,10 +17,10 @@
     <!-- <header class="bg-secondary header-size">
         <h1 class="text-bold h-100">Select Your Player-V</h1>
     </header> -->
-    <main>
+    <main class="section-bg">
         <section class="container">
             <div class="card-group">
-                <div class="card m-3">
+                <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p2.jpeg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
                         <h4 id="player1-name">Lionel Messi</h4>
@@ -28,7 +28,7 @@
                         <button id="player1-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
-                <div class="card m-3">
+                <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p3.jpg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
                         <h4 id="player2-name">Neymar Jr</h4>
@@ -36,7 +36,7 @@
                         <button id="player2-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
-                <div class="card m-3">
+                <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p4.jpeg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
                         <h4 id="player3-name">Kylian Mbappe</h4>
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <!-- Selected-V information -->
-                <div class="card m-3">
+                <div class="card m-3 card-bg text-white rounded-2">
                     <h3 class="text-center fs-2 fw-bold mt-5 mb-4">Selected-V</h3>
                     <div class="fs-4">
                         <ol>
@@ -60,7 +60,7 @@
             </div>
 
             <div class="card-group">
-                <div class="card m-3">
+                <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p5.jpeg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
                         <h4 class="player4-name">Vitor Machado</h4>
@@ -68,7 +68,7 @@
                         <button id="player4-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
-                <div class="card m-3">
+                <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p6.jpg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
                         <h4 id="player5-name">Sergio Ramos</h4>
@@ -76,7 +76,7 @@
                         <button id="player5-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
                     </div>
                 </div>
-                <div class="card m-3">
+                <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p7.jpg" class="card-img-top card-img-height" alt="...">
                     <div class="card-body text-center">
                         <h4 id="player6-name">Renato Sanches</h4>
@@ -85,27 +85,27 @@
                     </div>
                 </div>
                 <!-- Budget calculation -->
-                <div class="card m-3">
+                <div class="card m-3 card-bg text-white rounded-2 px-3">
                     <h3 class="text-center fs-2 fw-bold mt-3 mb-4">Budget</h3>
                     <div class="row g-0">
                         <label class="col" for="">Per Player</label>
-                        <input id="player-money" class="col" type="text">
+                        <input id="player-money" class="col bg-secondary border-light text-white" type="text">
                     </div>
                     <br>
-                    <button id="calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold">Calculate</button><br>
+                    <button id="calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold mx-auto">Calculate</button><br>
 
                     <p>Player Expenses:  $<span id="player-expenses">000</span></p>
 
                     <div class="row g-0">
                         <label class="col" for="">Manager</label>
-                        <input id="manager-money" class="col" type="text">
+                        <input id="manager-money" class="col bg-secondary border-light text-white" type="text">
                     </div><br>
                     <div class="row g-0">
                         <label class="col" for="">Coach</label>
-                        <input id="coach-money" class="col" type="text">
+                        <input id="coach-money" class="col bg-secondary border-light text-white" type="text">
                     </div><br>
 
-                    <button id="total-calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold">Calculate Total</button> <br>
+                    <button id="total-calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold mx-auto">Calculate Total</button> <br>
                     
                     <p>Total Expenses: $<span id="total-expenses">000</span></p>
                 </div>
@@ -114,6 +114,14 @@
         </section>
     
     </main>
+    
+    <footer class="section-bg text-white text-center footer-height">
+        <div class="">
+            <p class="pt-5 my-auto">Copyright @ 2022 All Rights Reserved</p>
+            <span>Shammi Akter</span>
+        </div>
+
+    </footer>
 
     
     
