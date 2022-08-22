@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- header section started  -->
-    <header class=" card-bg header-size">
+    <header class="card-bg header-size">
         <div class="row">
             <div class="col-3">
                 <img class="cover-img-height" src="images/cover-left.png" alt="">
@@ -32,6 +32,11 @@
     </header>
 
     <main class="section-bg">
+        <section id="alert-msg" class="d-none">
+            <div class="alert alert-warning text-center position-absolute end-0 p-1 fw-semibold alert-msg" role="alert">
+                ❌ <span class="text-danger">Warning</span> (You can not add more than 5 player)
+            </div>
+        </section>
 
         <!-- player section started -->
         <section class="container pt-5">
@@ -97,37 +102,38 @@
                         <button id="player6-btn" class="btn btn-primary w-75 mt-2 fw-semibold list-btn">SELECT</button>
                     </div>
                 </div>
+
                 <!-- Budget calculation -->
-                <div class="card m-3 card-bg text-white rounded-2 px-3">
-                    <h3 class="text-center fs-2 fw-semibold mt-3 mb-4">Budget</h3>
-                    <div class="row g-0">
-                        <label class="col" for="">Per Player</label>
-                        <input id="player-money" class="col bg-secondary border-light text-white" type="text">
+                <div class="card m-3 card-bg text-white rounded-2 ">
+                    <div class="px-2">
+                        <h3 class="text-center fs-2 fw-semibold mt-3 mb-4">Budget</h3>
+                        <div class="row g-0">
+                            <label class="col" for="">Per Player</label>
+                            <input id="player-money" class="col bg-secondary border-light text-white" type="text">
+                        </div>
+                        <br>
+                        <button id="calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold mx-auto position-relative">Calculate</button><br>
+                        
+                        <p>Player Expenses: $<span id="player-expenses">000</span></p>
+                        
+                        <div class="row g-0">
+                            <label class="col" for="">Manager</label>
+                            <input id="manager-money" class="col bg-secondary border-light text-white" type="text">
+                        </div><br>
+                        <div class="row g-0">
+                            <label class="col" for="">Coach</label>
+                            <input id="coach-money" class="col bg-secondary border-light text-white" type="text">
+                        </div><br>
+                        
+                        <button id="total-calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold mx-auto">Calculate Total</button> <br>
+                        
+                        <p>Total Expenses: <span class="text-danger">
+                                $<span id="total-expenses">000</span>
+                            </span></p>
                     </div>
-                    <br>
-                    <button id="calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold mx-auto">Calculate</button><br>
-
-                    <p>Player Expenses:  $<span id="player-expenses">000</span></p>
-
-                    <div class="row g-0">
-                        <label class="col" for="">Manager</label>
-                        <input id="manager-money" class="col bg-secondary border-light text-white" type="text">
-                    </div><br>
-                    <div class="row g-0">
-                        <label class="col" for="">Coach</label>
-                        <input id="coach-money" class="col bg-secondary border-light text-white" type="text">
-                    </div><br>
-
-                    <button id="total-calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold mx-auto">Calculate Total</button> <br>
-                    
-                    <p>Total Expenses: <span class="text-danger">
-                        $<span id="total-expenses">000</span>
-                    </span></p>
                 </div>
             </div>
-
         </section>
-    
     </main>
     
     <!-- footer started -->

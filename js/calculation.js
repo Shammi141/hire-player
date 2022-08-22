@@ -1,11 +1,17 @@
 // Selection of players functions
-
-
+function getPlayersName(item) {
+    const playerParentNode = item.parentNode;
+    const playerChildNodeName = playerParentNode.firstElementChild.innerText;
+    return playerChildNodeName;
+}
 
 // Expenses calculation functions
+
 function playersExpenses(){
+    const listContainer = document.getElementById('list-container');
+    const lengths = listContainer.children.length;
     const perPlayerAmount = parseFloat(document.getElementById('player-money').value);
-    const playerExpenses = perPlayerAmount * 5;
+    const playerExpenses = perPlayerAmount * (lengths);
     return playerExpenses;
 }
 
@@ -23,18 +29,9 @@ function totalExpenses(){
     return totalExpenseAmount;
 }
 
-function getPlayersName(item){
-    const playerParentNode = item.parentNode;
-    const playerChildNodeName = playerParentNode.firstElementChild.innerText;
-    return playerChildNodeName;
-}
-
-
 
 // player selection Event starts from here
-
 const items = document.getElementsByClassName('list-btn');
-
 for(const item of items){
     item.addEventListener('click', function(){
         
@@ -45,7 +42,9 @@ for(const item of items){
 
         //set the name in selected v section
         const listContainer = document.getElementById('list-container');
-        const lengths = listContainer.children.length;
+        const lengths = listContainer.childElementCount;
+
+        //for alert message
         if(lengths <5){
             const li = document.createElement('li');
             li.innerText = playerChildNodeName;
@@ -53,29 +52,19 @@ for(const item of items){
         }
         else{
             item.disabled = false;
+            const className = document.getElementById("alert-msg");
+            className.classList.remove("d-none");
         }
-        
-        
-        
-        
-
-
     });
 }
 
 
-
-
-
-
-
-
 // Calculation of Expensess
-document.getElementById('calculate-btn').addEventListener('click', function(){
+document.getElementById('calculate-btn').addEventListener('click', function () {
     getSetExpenses('player-expenses', playersExpenses());
+});
 
-    document.getElementById('total-calculate-btn').addEventListener('click', function () {
-        getSetExpenses('total-expenses', totalExpenses());
-    });
+document.getElementById('total-calculate-btn').addEventListener('click', function () {
+    getSetExpenses('total-expenses', totalExpenses());
 });
 
