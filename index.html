@@ -38,38 +38,35 @@
             <div id="inside-card" class="card-group">
                 <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p2.jpeg" class="card-img-top card-img-height" alt="...">
-                    <div class="card-body text-center">
-                        <h4 id="player1-name">Lionel Messi</h4>
+                    <div class="card-body text-center common">
+                        <h4>Lionel Messi</h4>
                         <span class="text-secondary">36 Goals || 120 Assist</span><br>
-                        <button id="player1-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player1-btn" class="btn btn-primary w-75 mt-2 fw-semibold list-btn">SELECT</button>
                     </div>
                 </div>
                 <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p3.jpg" class="card-img-top card-img-height" alt="...">
-                    <div class="card-body text-center">
-                        <h4 id="player2-name">Neymar Jr</h4>
+                    <div class="card-body text-center common">
+                        <h4>Neymar Jr</h4>
                         <span class="text-secondary">30 Goals || 134 Assist</span><br>
-                        <button id="player2-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player2-btn" class="btn btn-primary w-75 mt-2 fw-semibold list-btn">SELECT</button>
                     </div>
                 </div>
                 <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p4.jpeg" class="card-img-top card-img-height" alt="...">
-                    <div class="card-body text-center">
-                        <h4 id="player3-name">Kylian Mbappe</h4>
+                    <div class="card-body text-center common">
+                        <h4>Kylian Mbappe</h4>
                         <span class="text-secondary">31 Goals || 113 Assist</span><br>
-                        <button id="player3-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player3-btn" class="btn btn-primary w-75 mt-2 fw-semibold list-btn">SELECT</button>
                     </div>
                 </div>
-                <!-- Selected-V information -->
+                <!-- Selected-five players information -->
                 <div class="card m-3 card-bg text-white rounded-2">
-                    <h3 class="text-center fs-2 fw-bold mt-5 mb-4">Selected-V</h3>
+                    <h3 class="text-center fs-2 fw-semibold mt-5 mb-4">Selected-V</h3>
                     <div class="fs-4">
-                        <ol>
-                            <li>wert</li>
-                            <li>wert</li>
-                            <li>wert</li>
-                            <li>wert</li>
-                            <li>wert</li>
+                        <ol id="list-container">
+
+
                         </ol>
                     </div>
                 </div>
@@ -78,31 +75,31 @@
             <div class="card-group">
                 <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p5.jpeg" class="card-img-top card-img-height" alt="...">
-                    <div class="card-body text-center">
-                        <h4 class="player4-name">Vitor Machado</h4>
+                    <div class="card-body text-center common">
+                        <h4>Vitor Machado</h4>
                         <span class="text-secondary">23 Goals || 90 Assist</span><br>
-                        <button id="player4-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player4-btn" class="btn btn-primary w-75 mt-2 fw-semibold list-btn">SELECT</button>
                     </div>
                 </div>
                 <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p6.jpg" class="card-img-top card-img-height" alt="...">
-                    <div class="card-body text-center">
-                        <h4 id="player5-name">Sergio Ramos</h4>
+                    <div class="card-body text-center common">
+                        <h4>Sergio Ramos</h4>
                         <span class="text-secondary">21 Goals || 100 Assist</span><br>
-                        <button id="player5-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player5-btn" class="btn btn-primary w-75 mt-2 fw-semibold list-btn">SELECT</button>
                     </div>
                 </div>
                 <div class="card m-3 card-bg text-white rounded-2">
                     <img src="images/p7.jpg" class="card-img-top card-img-height" alt="...">
-                    <div class="card-body text-center">
-                        <h4 id="player6-name">Renato Sanches</h4>
+                    <div class="card-body text-center common">
+                        <h4>Renato Sanches</h4>
                         <span class="text-secondary">19 Goals || 97 Assist</span><br>
-                        <button id="player6-btn" class="btn btn-primary w-75 mt-2 fw-semibold">SELECT</button>
+                        <button id="player6-btn" class="btn btn-primary w-75 mt-2 fw-semibold list-btn">SELECT</button>
                     </div>
                 </div>
                 <!-- Budget calculation -->
                 <div class="card m-3 card-bg text-white rounded-2 px-3">
-                    <h3 class="text-center fs-2 fw-bold mt-3 mb-4">Budget</h3>
+                    <h3 class="text-center fs-2 fw-semibold mt-3 mb-4">Budget</h3>
                     <div class="row g-0">
                         <label class="col" for="">Per Player</label>
                         <input id="player-money" class="col bg-secondary border-light text-white" type="text">
@@ -123,7 +120,9 @@
 
                     <button id="total-calculate-btn" class="btn btn-primary w-75 mt-2 fw-semibold mx-auto">Calculate Total</button> <br>
                     
-                    <p>Total Expenses: $<span id="total-expenses">000</span></p>
+                    <p>Total Expenses: <span class="text-danger">
+                        $<span id="total-expenses">000</span>
+                    </span></p>
                 </div>
             </div>
 

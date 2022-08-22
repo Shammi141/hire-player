@@ -23,17 +23,46 @@ function totalExpenses(){
     return totalExpenseAmount;
 }
 
+function getPlayersName(item){
+    const playerParentNode = item.parentNode;
+    const playerChildNodeName = playerParentNode.firstElementChild.innerText;
+    return playerChildNodeName;
+}
 
-// Event starts from here 
 
 
-document.getElementById('inside-card').addEventListener('click', function(){
-    if (document.getElementById('player1-btn').addEventListener('click'), function(){
+// player selection Event starts from here
 
-    }){
+const items = document.getElementsByClassName('list-btn');
 
-    }
-});
+for(const item of items){
+    item.addEventListener('click', function(){
+        
+        item.disabled = true;
+
+        //get players name
+        const playerChildNodeName= getPlayersName(item);
+
+        //set the name in selected v section
+        const listContainer = document.getElementById('list-container');
+        const lengths = listContainer.children.length;
+        if(lengths <5){
+            const li = document.createElement('li');
+            li.innerText = playerChildNodeName;
+            listContainer.appendChild(li);
+        }
+        else{
+            item.disabled = false;
+        }
+        
+        
+        
+        
+
+
+    });
+}
+
 
 
 
